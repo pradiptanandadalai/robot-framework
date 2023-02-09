@@ -19,7 +19,7 @@ InputTest
     input text  ${child_input_field_search}     IFBB
     Sleep   5
     Press Keys  ${child_input_field_search}   ENTER
-    Sleep   10
+    Sleep   5
     Close Window
 
 
