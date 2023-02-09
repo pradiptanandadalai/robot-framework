@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.8.0 on win32)" generated="20230209 15:07:03.256" rpa="false" schemaversion="3">
+<suite id="s1" name="Input &amp; Test">
+<suite id="s1-s1" name="Input" source="C:\Users\pd1061\PycharmProjects\robot_framework\com.arris.automation\input.robot">
+<test id="s1-s1-t1" name="InputTest" line="11">
+<kw name="GoogleLandingPage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>headlesschrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230209 15:07:03.499" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20230209 15:07:03.498" endtime="20230209 15:07:14.582"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230209 15:07:14.582" endtime="20230209 15:07:14.704"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230209 15:07:19.708" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230209 15:07:14.704" endtime="20230209 15:07:19.708"/>
+</kw>
+<status status="PASS" starttime="20230209 15:07:03.498" endtime="20230209 15:07:19.709"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_filed_search}</arg>
+<arg>facebook</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 15:07:19.713" level="INFO">Typing text 'facebook' into text field 'xpath:/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20230209 15:07:19.710" endtime="20230209 15:07:19.913"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230209 15:07:21.919" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230209 15:07:19.914" endtime="20230209 15:07:21.919"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_filed_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230209 15:07:21.922" level="INFO">Sending key(s) ('ENTER',) to xpath:/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input element.</msg>
+<msg timestamp="20230209 15:07:22.248" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230209 15:07:22.248" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230209 15:07:21.920" endtime="20230209 15:07:25.422"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230209 15:07:30.427" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230209 15:07:25.423" endtime="20230209 15:07:30.427"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${child_input_field_search}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230209 15:07:30.429" endtime="20230209 15:07:30.535"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230209 15:07:35.539" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230209 15:07:30.536" endtime="20230209 15:07:35.539"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${child_input_field_search}</arg>
+<arg>IFBB</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 15:07:35.541" level="INFO">Typing text 'IFBB' into text field 'xpath://*[@id="tsf"]/div[1]/div[1]/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20230209 15:07:35.540" endtime="20230209 15:07:35.722"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230209 15:07:40.729" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230209 15:07:35.723" endtime="20230209 15:07:40.729"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${child_input_field_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230209 15:07:40.734" level="INFO">Sending key(s) ('ENTER',) to xpath://*[@id="tsf"]/div[1]/div[1]/div[2]/div/div[2]/input element.</msg>
+<msg timestamp="20230209 15:07:41.082" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230209 15:07:41.082" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230209 15:07:40.732" endtime="20230209 15:07:44.176"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230209 15:07:54.189" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230209 15:07:44.178" endtime="20230209 15:07:54.189"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230209 15:07:54.191" endtime="20230209 15:07:54.222"/>
+</kw>
+<status status="PASS" starttime="20230209 15:07:03.497" endtime="20230209 15:07:54.223"/>
+</test>
+<status status="PASS" starttime="20230209 15:07:03.286" endtime="20230209 15:07:54.225"/>
+</suite>
+<suite id="s1-s2" name="Test" source="C:\Users\pd1061\PycharmProjects\robot_framework\com.arris.automation\test.robot">
+<test id="s1-s2-t1" name="FirstTestCase" line="11">
+<kw name="GoogleLandingPage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230209 15:07:54.232" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20230209 15:07:54.231" endtime="20230209 15:07:57.586"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230209 15:07:57.586" endtime="20230209 15:07:57.717"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230209 15:08:07.718" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230209 15:07:57.717" endtime="20230209 15:08:07.718"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230209 15:08:07.719" endtime="20230209 15:08:09.770"/>
+</kw>
+<status status="PASS" starttime="20230209 15:07:54.231" endtime="20230209 15:08:09.771"/>
+</kw>
+<status status="PASS" starttime="20230209 15:07:54.230" endtime="20230209 15:08:09.773"/>
+</test>
+<status status="PASS" starttime="20230209 15:07:54.227" endtime="20230209 15:08:09.776"/>
+</suite>
+<status status="PASS" starttime="20230209 15:07:03.259" endtime="20230209 15:08:09.782"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Input &amp; Test">Input &amp; Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Input">Input &amp; Test.Input</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Test">Input &amp; Test.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
