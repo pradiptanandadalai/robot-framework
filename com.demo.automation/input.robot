@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 ${url}  https://www.google.com/
 ${browser}  headlesschrome
 ${input_filed_search}   xpath:/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input
-${child_input_field_search}     xpath://*[@id="tsf"]/div[1]/div[1]/div[2]/div/div[2]/input
+${child_input_field_search}     xpath://*[@id="tsf"]/div[1]/div[1]/div[3]/div/div[2]/input
 *** Test Cases ***
 InputTest
     GoogleLandingPage
